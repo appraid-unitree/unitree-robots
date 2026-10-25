@@ -1,0 +1,56 @@
+1792661012.248585 [1] go2_accept: selected interface "lo" is not multicast-capable: disabling multicast
+
+==== TEST 1  Robot stands stably                        PASS
+     stand-up completed (encoder-settled); IMU-site height 0.365 m (base origin ~0.04 m lower); max |roll|,|pitch| over 3 s hold 0.009 rad; horizontal drift 0.002 m
+
+
+==== TEST 2  Robot walks forward in a straight line     PASS
+     cmd vx=0.40 m/s for 4 s: forward 1.73 m (avg 0.43 m/s), lateral -0.013 m, heading change 0.000 rad; cmd vx=-0.30 m/s for 3 s: -1.02 m; max tilt 0.019 rad
+
+
+==== TEST 3  Robot turns correctly                      PASS
+     cmd wz=+0.8 rad/s 4 s -> yaw +3.13 rad (left); cmd wz=-0.8 rad/s 4 s -> yaw -3.14 rad (right); position drift during turns 0.024 m
+
+[nav] plan: 2 waypoints, 2.61 m
+
+==== TEST 4  Robot reaches a destination in free space  PASS
+     goTo(0.0, 2.5): nav=SUCCESS (goal reached (measured)) in 8.5 s; MEASURED final error 0.075 m; min footprint clearance 1.31 m
+
+[nav] SUCCEEDED: goal reached (measured) | final=(0.018, 2.427) err=0.075 m, t=8.5 s
+[nav] plan: 2 waypoints, 2.43 m
+[nav] SUCCEEDED: goal reached (measured) | final=(-0.034, 0.049) err=0.060 m, t=11.4 s
+
+==== TEST 5  Robot detects an obstacle blocking its path PASS
+     robot at (-0.03, 0.05); scan-built map has 72 occupied cells on the wall (x=2.3..2.7); straight line A->B is BLOCKED in the cost map; 0 occupied cells > 0.15 m from any real obstacle
+
+[nav] plan: 3 waypoints, 5.57 m
+[nav] plan: 4 waypoints, 4.49 m (previous path blocked by new obstacle)
+[nav] plan: 4 waypoints, 4.65 m (previous path blocked by new obstacle)
+[nav] plan: 4 waypoints, 4.77 m (previous path blocked by new obstacle)
+[nav] plan: 4 waypoints, 3.77 m (previous path blocked by new obstacle)
+[nav] SUCCEEDED: goal reached (measured) | final=(4.969, -0.066) err=0.073 m, t=20.8 s
+
+==== TEST 6  Robot navigates around the obstacle        PASS
+     start (-0.03, 0.05); max lateral excursion from line A-B 1.83 m; minimum measured footprint clearance to any obstacle 0.283 m (no collision); replans 22, safety stops 0; closest scan return 0.45 m
+
+
+==== TEST 7  Robot successfully reaches the destination PASS
+     goTo(5.0, 0.0): nav=SUCCESS (goal reached (measured)) in 20.8 s, travelled 6.60 m; MEASURED final position (4.969, -0.066), error 0.073 m
+
+[nav] FAILED: no collision-free path to goal | final=(4.957, -0.094) err=1.530 m, t=10.0 s
+
+==== TEST 8  Application reports success / failure from feedback PASS
+     unreachable goal (pillar centre): nav=FAILURE (correct), reason "no collision-free path to goal" after 10.0 s, min clearance 0.823 m; test-7 nav SUCCESS confirmed by measured pose: yes
+
+
+================ ACCEPTANCE SUMMARY ================
+  [PASS] 1. Robot stands stably
+  [PASS] 2. Robot walks forward in a straight line
+  [PASS] 3. Robot turns correctly
+  [PASS] 4. Robot reaches a destination in free space
+  [PASS] 5. Robot detects an obstacle blocking its path
+  [PASS] 6. Robot navigates around the obstacle
+  [PASS] 7. Robot successfully reaches the destination
+  [PASS] 8. Application reports success / failure from feedback
+  8 / 8 passed
+  control loop: 39148 cycles, 664 late (>4 ms, 1.70 %), max jitter 58.3 ms | lowcmd sent 39148 | scans 784 | sim/wall time 77.9/77.9 s (RTF 1.00)

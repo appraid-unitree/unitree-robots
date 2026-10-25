@@ -1,0 +1,8 @@
+PASS | 1. Robot stands stably | stand-up completed (encoder-settled); base height 0.365 m; max |roll|,|pitch| over 3 s hold 0.009 rad; horizontal drift 0.002 m
+PASS | 2. Robot walks forward in a straight line | cmd vx=0.40 m/s for 4 s: forward 1.71 m (avg 0.43 m/s), lateral 0.003 m, heading change 0.004 rad; cmd vx=-0.30 m/s for 3 s: -1.01 m; max tilt 0.023 rad
+PASS | 3. Robot turns correctly | cmd wz=+0.8 rad/s 4 s -> yaw +3.11 rad (left); cmd wz=-0.8 rad/s 4 s -> yaw -3.11 rad (right); position drift during turns 0.027 m
+FAIL | 4. Robot reaches a destination in free space | goTo(0.0, 2.5): nav=SUCCESS (goal reached (measured)) in 9.0 s; MEASURED final error 0.226 m; min footprint clearance 1.32 m
+PASS | 5. Robot detects an obstacle blocking its path | robot at (0.07, 0.14); scan-built map has 59 occupied cells on the wall (x=2.3..2.7); straight line A->B is BLOCKED in the cost map; 28 occupied cells > 0.15 m from any real obstacle
+PASS | 6. Robot navigates around the obstacle | start (0.07, 0.14); max lateral excursion from line A-B 1.91 m; minimum measured footprint clearance to any obstacle 0.279 m (no collision); replans 25, safety stops 0; closest scan return 0.46 m
+FAIL | 7. Robot successfully reaches the destination | goTo(5.0, 0.0): nav=SUCCESS (goal reached (measured)) in 22.1 s, travelled 6.32 m; MEASURED final position (5.556, -0.077), error 0.561 m
+FAIL | 8. Application reports success / failure from feedback | unreachable goal (pillar centre): nav=SUCCESS (wrong!), reason "goal reached (measured)" after 6.1 s, min clearance 0.141 m; test-7 nav SUCCESS confirmed by measured pose: no

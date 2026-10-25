@@ -1,0 +1,94 @@
+[app] connecting (domain 1, iface lo)
+1792661288.226944 [1] go2_nav_ap: selected interface "lo" is not multicast-capable: disabling multicast
+[app] rt/lowstate OK, standing up...
+[app] standing. pose source: rt/sportmodestate
+[app] goTo(5.00, 0.00)
+[status] PLANNING  pose=( -0.06,  0.00,-0.00) cmd=(0.00,0.00) goal_dist=0.00 front=1.96 loco=STAND
+[nav] plan: 3 waypoints, 5.58 m
+[status] FOLLOWING pose=(  0.13,  0.02, 0.38) cmd=(0.42,0.30) goal_dist=4.87 front=1.89 loco=WALK
+[status] FOLLOWING pose=(  0.59,  0.23, 0.53) cmd=(0.50,0.02) goal_dist=4.42 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.07,  0.49, 0.51) cmd=(0.49,-0.03) goal_dist=3.96 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.54,  0.74, 0.51) cmd=(0.49,0.04) goal_dist=3.54 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.94,  0.97, 0.52) cmd=(0.22,0.00) goal_dist=3.21 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.10,  1.06, 0.47) cmd=(0.24,-0.22) goal_dist=3.09 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.30,  1.14, 0.28) cmd=(0.21,-0.11) goal_dist=2.93 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.52,  1.20,-0.05) cmd=(0.24,-0.31) goal_dist=2.75 front=0.90 loco=WALK
+[status] FOLLOWING pose=(  2.76,  1.17,-0.47) cmd=(0.30,-0.28) goal_dist=2.53 front=0.79 loco=WALK
+[status] FOLLOWING pose=(  3.01,  1.02,-0.70) cmd=(0.27,-0.08) goal_dist=2.23 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.25,  0.81,-0.73) cmd=(0.31,-0.01) goal_dist=1.93 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.49,  0.59,-0.73) cmd=(0.22,0.01) goal_dist=1.62 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.64,  0.45,-0.54) cmd=(0.21,0.33) goal_dist=1.43 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.89,  0.34,-0.33) cmd=(0.31,0.09) goal_dist=1.16 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.26,  0.22,-0.29) cmd=(0.50,0.00) goal_dist=0.78 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.73,  0.09,-0.29) cmd=(0.23,-0.06) goal_dist=0.29 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.88,  0.04,-0.32) cmd=(0.10,-0.03) goal_dist=0.13 front=-1.00 loco=WALK
+[nav] SUCCEEDED: goal reached (measured) | final=(4.928, 0.027) err=0.077 m, t=17.7 s
+[app] RESULT SUCCESS: goal reached (measured) | final=(4.928, 0.027, -0.339) pos_err=0.077 m yaw_err=0.000 rad time=17.7 s travelled=5.63 m replans=18 safety_stops=0 closest_obstacle=0.48 m
+[app] goTo(0.00, 0.00, yaw)
+[nav] plan: 5 waypoints, 5.61 m
+[status] ROTATING  pose=(  4.93,  0.03,-0.38) cmd=(0.00,-1.00) goal_dist=4.93 front=-1.00 loco=WALK
+[status] ROTATING  pose=(  4.92,  0.06,-1.32) cmd=(0.00,-1.00) goal_dist=4.92 front=-1.00 loco=WALK
+[status] ROTATING  pose=(  4.95,  0.06,-2.29) cmd=(0.00,-1.00) goal_dist=4.95 front=0.97 loco=WALK
+[status] FOLLOWING pose=(  4.89,  0.03, 3.04) cmd=(0.37,-0.49) goal_dist=4.89 front=1.80 loco=WALK
+[status] FOLLOWING pose=(  4.44,  0.14, 2.75) cmd=(0.49,0.02) goal_dist=4.44 front=1.41 loco=WALK
+[status] FOLLOWING pose=(  3.94,  0.33, 2.74) cmd=(0.26,-0.21) goal_dist=3.95 front=0.87 loco=WALK
+[status] FOLLOWING pose=(  3.71,  0.44, 2.62) cmd=(0.25,-0.12) goal_dist=3.74 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.51,  0.56, 2.52) cmd=(0.22,-0.06) goal_dist=3.56 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.32,  0.71, 2.48) cmd=(0.29,0.02) goal_dist=3.40 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.05,  0.92, 2.49) cmd=(0.20,0.24) goal_dist=3.19 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.88,  1.04, 2.63) cmd=(0.19,0.29) goal_dist=3.06 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.68,  1.13, 2.82) cmd=(0.14,0.69) goal_dist=2.91 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.48,  1.17,-3.07) cmd=(0.23,0.39) goal_dist=2.74 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.21,  1.14,-2.84) cmd=(0.23,0.32) goal_dist=2.48 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.92,  1.03,-2.64) cmd=(0.30,0.10) goal_dist=2.18 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.54,  0.83,-2.61) cmd=(0.48,-0.06) goal_dist=1.75 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.06,  0.56,-2.65) cmd=(0.49,-0.04) goal_dist=1.20 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  0.59,  0.31,-2.67) cmd=(0.49,0.02) goal_dist=0.67 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  0.22,  0.12,-2.65) cmd=(0.20,0.02) goal_dist=0.25 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  0.11,  0.06,-2.64) cmd=(0.10,0.01) goal_dist=0.13 front=-1.00 loco=WALK
+[status] ALIGNING  pose=(  0.07,  0.03,-2.77) cmd=(0.00,-0.55) goal_dist=0.07 front=-1.00 loco=WALK
+[nav] SUCCEEDED: goal reached (measured) | final=(0.081, 0.020) err=0.084 m, t=21.4 s
+[app] RESULT SUCCESS: goal reached (measured) | final=(0.081, 0.020, -3.064) pos_err=0.084 m yaw_err=-0.080 rad time=21.4 s travelled=5.62 m replans=20 safety_stops=0 closest_obstacle=0.45 m
+[app] goTo(4.60, 2.30)
+[status] PLANNING  pose=(  0.08,  0.02,-3.06) cmd=(0.00,0.00) goal_dist=0.08 front=-1.00 loco=STAND
+[nav] plan: 2 waypoints, 5.06 m
+[status] ROTATING  pose=(  0.10,  0.00, 2.59) cmd=(0.00,-1.00) goal_dist=5.05 front=-1.00 loco=WALK
+[status] ROTATING  pose=(  0.09, -0.01, 1.61) cmd=(0.00,-1.00) goal_dist=5.07 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  0.12,  0.05, 0.67) cmd=(0.38,-0.48) goal_dist=5.01 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  0.52,  0.31, 0.43) cmd=(0.48,-0.08) goal_dist=4.54 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.01,  0.54, 0.43) cmd=(0.49,0.05) goal_dist=4.00 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.50,  0.78, 0.46) cmd=(0.50,-0.01) goal_dist=3.45 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.94,  1.00, 0.46) cmd=(0.22,0.00) goal_dist=2.96 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.14,  1.09, 0.46) cmd=(0.24,-0.00) goal_dist=2.74 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.38,  1.21, 0.45) cmd=(0.36,0.02) goal_dist=2.48 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.78,  1.39, 0.46) cmd=(0.49,0.04) goal_dist=2.04 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.27,  1.63, 0.48) cmd=(0.48,-0.02) goal_dist=1.49 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.69,  1.84, 0.47) cmd=(0.36,-0.02) goal_dist=1.02 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.06,  2.03, 0.45) cmd=(0.48,0.01) goal_dist=0.60 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.40,  2.20, 0.46) cmd=(0.18,0.01) goal_dist=0.22 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.50,  2.25, 0.47) cmd=(0.10,0.00) goal_dist=0.11 front=-1.00 loco=WALK
+[nav] SUCCEEDED: goal reached (measured) | final=(4.535, 2.271) err=0.071 m, t=15.6 s
+[app] RESULT SUCCESS: goal reached (measured) | final=(4.535, 2.271, 0.470) pos_err=0.071 m yaw_err=0.000 rad time=15.6 s travelled=5.12 m replans=15 safety_stops=0 closest_obstacle=0.50 m
+[app] goTo(1.00, -2.00)
+[nav] plan: 3 waypoints, 6.15 m
+[status] ROTATING  pose=(  4.54,  2.27, 0.49) cmd=(0.00,1.00) goal_dist=5.55 front=-1.00 loco=WALK
+[status] ROTATING  pose=(  4.54,  2.22, 1.44) cmd=(0.00,1.00) goal_dist=5.51 front=-1.00 loco=WALK
+[status] ROTATING  pose=(  4.57,  2.23, 2.45) cmd=(0.00,1.00) goal_dist=5.53 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.51,  2.24,-2.90) cmd=(0.39,0.44) goal_dist=5.51 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  4.08,  2.08,-2.65) cmd=(0.50,-0.02) goal_dist=5.11 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.60,  1.83,-2.66) cmd=(0.39,0.04) goal_dist=4.63 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  3.18,  1.61,-2.63) cmd=(0.49,-0.04) goal_dist=4.22 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.71,  1.36,-2.65) cmd=(0.49,-0.03) goal_dist=3.77 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.30,  1.14,-2.67) cmd=(0.21,0.10) goal_dist=3.40 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  2.10,  1.04,-2.62) cmd=(0.19,0.34) goal_dist=3.23 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.93,  0.93,-2.44) cmd=(0.13,0.80) goal_dist=3.07 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.80,  0.79,-2.01) cmd=(0.24,0.21) goal_dist=2.90 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.70,  0.52,-1.83) cmd=(0.29,0.03) goal_dist=2.61 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.61,  0.14,-1.85) cmd=(0.43,-0.02) goal_dist=2.22 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.47, -0.37,-1.86) cmd=(0.50,0.01) goal_dist=1.69 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.31, -0.89,-1.83) cmd=(0.50,-0.00) goal_dist=1.15 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.17, -1.41,-1.83) cmd=(0.49,-0.03) goal_dist=0.61 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.06, -1.78,-1.85) cmd=(0.19,-0.01) goal_dist=0.23 front=-1.00 loco=WALK
+[status] FOLLOWING pose=(  1.03, -1.89,-1.86) cmd=(0.10,-0.01) goal_dist=0.12 front=-1.00 loco=WALK
+[nav] SUCCEEDED: goal reached (measured) | final=(1.021, -1.929) err=0.074 m, t=19.0 s
+[app] RESULT SUCCESS: goal reached (measured) | final=(1.021, -1.929, -1.854) pos_err=0.074 m yaw_err=0.000 rad time=19.0 s travelled=6.12 m replans=19 safety_stops=0 closest_obstacle=0.46 m

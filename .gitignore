@@ -1,0 +1,11 @@
+# build outputs (recreated by scripts/build.sh)
+build/
+build_nav/
+.install/
+test_logs/
+*.o
+*.a.tmp
+__pycache__/
+# local IDE files
+.vscode/
+.idea/
